@@ -7,6 +7,7 @@ app.use(bp.urlencoded({ extended: false }));
 
 app.use(bp.json())
 
-exports.home = async (req, res) => {
-    res.render('index')
-}
+
+exports.index = async (req, res) => {
+    res.render('index.ejs', { title: 'Tectovia' })
+};
