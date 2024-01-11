@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+.title1{
+    display: block;
+    padding: 60px;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+.i{
+    margin-left: 700px;
+    margin-top: -350px;
+}
+.welcome {
+    font-size: 50px;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #4B4E53;
+}
+.title{
+    font-size: 100px;
+    color: #4B4E53;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.line{
+    margin-left: 10px;
+    color: #4B4E53;
+}
+.title2{
+    margin-top: 250px;
+    margin-left: 50px;
+    display: block;
+    color: #4B4E53;
+    font-family: Lato,Arial,Helvetica,sans-serif;
+    font-weight: 100;
+
+}
+.title2 h1{
+    font-size: 50px;
+ 
+}
+
+#idea{
+    margin-left: 150px;
+    width: 390px;
+    height: 500px;
+}
+
+.underline-three {
+    position: relative;
+  }
+
+  .underline-three::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -7px; /* Adjust this value to move the underline up or down */
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 3px; /* Adjust the height of the underline */
+    background-color: #4B4E53; /* Adjust the color of the underline */
+  }
+  .para{
+    font-size: 25px;
+    position: relative;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    float: left;
+    margin-top: -100px;
+    width: 900px;
+    height: 10px;
+    
+}
+.Learn{
+    margin-top: -200px;
+}
+.learn1{
+    font-weight: 100;
+}
+
+   
+.side{
+    display: flex;
+}
+.para {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-top: 0px;
+    margin-right: -90px;
+
+  }
+
+  /* Style for the four side-by-side elements */
+  .point {
+    flex: 1; /* Equal width, adjust as needed */
+    margin-right: 140px; /* Optional: Add some space between the points */
+    margin-bottom: 20px; /* Optional: Add some space between rows */
+    
+  }
+
+  /* Optional: Apply styles for better visibility */
+  .point {
+   font-weight: 100;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+#img2{
+    margin-left: 350px;
+   width: 600px;
+   height: 500px;
+}
+.title3{
+    margin-top: 150px;
+    display:flex;
+    border: solid;
+    border-color: #00B2CA;
+    background-color: #00B2CA;
+    height: 500px;
+} 
+.title3 h1{
+    padding: 40px;
+}
+
+.pp p{
+    
+    margin-top: 0px;
+    
+}
+.interactive{
+    display: block;
+    padding: 40px;
+    margin-left: 70px;
+    
+}
+.in{
+    font-weight: lighter;
+}
+.interactive h1{
+    margin-right: 50px;
+    font-size: 45px;
+}
+.title4{
+    padding: 40px;
+    margin-top: 150px;
+    display: flex;
+}
+#img3{
+    width: 600px;
+}
+.title4 h1{
+    font-size: 40px;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+.EXCLUSIVE p{
+    margin-top: 40px;
+    width: 500px;
+    margin-left: 250px;
+    font-weight: 600;
+}
+.title5{
+    color:#fff;
+    border: solid;
+    background:linear-gradient(#C32C62,#7B3985);
+    height: 250px;
+    
+}
+.title5{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+   
+
+}
+.point1{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: #ffffff;
+    flex: 1; /* Equal width, adjust as needed */
+    margin-right: 250px; /* Optional: Add some space between the points */
+    margin-bottom: 3px; /* Optional: Add some space between rows */
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.title6{
+    margin-top: 150px;
+    margin-left: 150px;
+    padding: 40px;
+}
+.imgs{
+    margin-left: 30px;
+    width: 250px;
+}
+.imgwords{
+    display: flex;
+    
+}
+.imgwords h3{
+    font-size: 20px;
+    margin-left: 120px;
+}
+.title7{
+    display: flex;
+    border: solid;
+    border-color: #E7A9B1;
+    background-color: #E7A9B1;
+    height: 500px;
+}
+.title7word{
+    margin-left: 150px;
+}
+.title7 h1{
+    font-size: 40px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.title7word p{
+    margin-left: 200px;
+margin-top: 30px;
+width: 300px;
+}
+.title8{
+    display: flex;
+    border: solid;
+    background-color: #FFD45E;
+    border-color: #FFD45E;
+    height: 500px;
+}
+.title8word p{
+margin-left: 100px;
+margin-top: 30px;
+width: 300px;
+
+}
+.title8word h1{
+    margin-left: 100px;
+    
+}
+.title8word{
+    margin-top: 150px;
+}
+#img4{
+    width: 600px;
+    height: 300px;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+#img5{
+    width: 600px;
+    height: 350px; 
+    margin-top: 80px;
+}
+.title9{
+    margin-top: 60px;
+    border: solid;
+    background-color: #2C2C2C;
+    height: 200px;
+
+
+}
+.title9 h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 250px;
+    margin-top: 80px;
+}
+.title10{
+    border: solid;
+    background-color: #218380;
+    border-color: #218380;
+    height: 190px;
+}
+.title10 button{
+    margin-left: 200px;
+    margin-top: 100px;
+    color:#fff;
+    border-radius: 15px;
+    background-color: black;
+    height: 50px;
+    width: 100px;
+}
+.title10 input{
+    color :#218380;
+}
+@keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .interactive {
+    animation: slideFromLeft 1s ease-in-out;
+  }
+  .EXCLUSIVE{
+    animation: slideFromRight 1s ease-in-out;
+  }
+  .para{
+    animation: slideFromRight 1s ease-in-out;
+  }
