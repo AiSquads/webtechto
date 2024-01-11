@@ -14,10 +14,10 @@
 .dropdown .dropbtn {
     font-size: 16px; 
     font-family: var(--primary-font);
-    font-weight: 600; 
+    font-weight: 500; 
     border: none;
     outline: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     justify-content: center;
     padding: 10px 15px;
@@ -59,9 +59,22 @@
 
 .signbtn {
     border: 1px solid aqua;
-    color: #ffffff;
     border-radius: 9px 9px 9px 9px;
-    background-color: rgb(194, 79, 255);
+    background-color: rgb(217, 0, 255);
+}
+
+.signbtn a {
+    color: white;
+}
+
+.signbtn:hover {
+    color: black;
+    background: aqua;
+    border: 1px solid black;
+}
+
+.signbtn a:hover {
+    color: black;
 }
 
 /* nav bar */
@@ -69,10 +82,8 @@ nav {
     position: relative;
     display: flex;
     justify-content: space-between;
-    color: #ffffff;
-    background: rgb(70, 0, 128);
+    color: black;
     z-index: 1;
-
 }
 
 nav ul {
@@ -92,9 +103,9 @@ nav li {
 
 nav a {
     font-style: var(--primary-font);
-    font-weight: 600;
-    transition-duration: 4  00ms;
-    color: var(--secondary-text);
+    font-weight: 500;
+    transition-duration: 250ms;
+    color: black;
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -106,8 +117,6 @@ nav a {
 }
 
 nav a:hover {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     background: transparent;
 }
 
@@ -119,9 +128,8 @@ nav ul li a:hover,
 nav ul li a.dog
 {
     font-size: 1.2rem;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     background: transparent;
+    color: rgb(23, 0, 98);
 }
 
 /* Responsive */
