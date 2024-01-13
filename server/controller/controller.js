@@ -27,3 +27,6 @@ exports.sign_in = async (req, res) => {
 exports.sign_up = async (req, res) => {
     res.render('sign_up.ejs', { title: 'Sign Up' })
 };
+exports.workshop = async (req, res) => {
+    res.render('workshop.ejs', { title: 'workshop' })
+};
