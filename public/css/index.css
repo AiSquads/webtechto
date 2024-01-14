@@ -9,7 +9,7 @@
         
         position: relative;
         color: #000;
-        -webkit-text-stroke: 0.3vw #000000;
+        -webkit-text-stroke: 0.4vw #000000;
         text-transform: uppercase;
      }
      .title::before{
@@ -18,12 +18,12 @@
          top: 0;
          left: 0;
          width: 0;
-         height: 100%;
-         color: #fab005;
-         -webkit-text-stroke: 0vw #383d52;
-         border-right: 2px solid #133c7881;
+         height: 90%;
+         color: #f87604;
+         -webkit-text-stroke: 0vw;
+         border-right: 1px solid #f87604;
          overflow: hidden;
-         animation: animate 6s linear infinite;
+         animation: animate 8s linear infinite;
      }
 @keyframes animate{
     0%,10%,100%
@@ -32,7 +32,7 @@
     }
     50%
     {
-        width: 40%;
+        width: 39%;
     }
 }
  
