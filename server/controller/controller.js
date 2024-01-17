@@ -28,5 +28,5 @@ exports.sign_up = async (req, res) => {
     res.render('sign_up.ejs', { title: 'Sign Up' })
 };
 exports.workshop = async (req, res) => {
-    res.render('workshop.ejs', { title: 'workshop' })
+    res.render('workshop.ejs', { title: 'Workshop' })
 };

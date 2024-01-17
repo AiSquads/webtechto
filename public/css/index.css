@@ -5,37 +5,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     }
-    .title{
-        
-        position: relative;
-        color: #000;
-        -webkit-text-stroke: 0.4vw #000000;
-        text-transform: uppercase;
-     }
-     .title::before{
-         content: attr(data-text);
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 0;
-         height: 90%;
-         color: #f87604;
-         -webkit-text-stroke: 0vw;
-         border-right: 1px solid #f87604;
-         overflow: hidden;
-         animation: animate 8s linear infinite;
-     }
-@keyframes animate{
-    0%,10%,100%
-    {
-        width: -10%;
-    }
-    50%
-    {
-        width: 39%;
-    }
-}
- 
 
     .title1 {
     display: block;
@@ -383,4 +352,39 @@
     .para {
     animation: slideFromRight 1s ease-in-out;
     }
+
+
+    /* Text Animation For " TECTOVIA "*/
+
+    
+svg {
+    --primary-color: rgb(4, 0, 255);
+    --primary-color-light: rgb(0, 255, 136);
+    font-family: "Poppins", sans-serif;
+	width: 80%;
+}
+svg text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 1;
+	stroke: var(--primary-color);
+	font-size: 130px;
+    text-shadow: 0 0 30px var(--primary-color-light);
+}
+
+@keyframes stroke {
+	0%   {
+		fill: var(--primary-color-light); stroke: var(--primary-color);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+	}
+	70%  {fill: var(--primary-color-light); stroke: var(--primary-color); }
+	80%  {fill: var(--primary-color-light); stroke: var(--primary-color); stroke-width: 2; }
+	100% {
+		fill: var(--primary-color-light); stroke: var(--primary-color); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
    
