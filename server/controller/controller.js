@@ -1,6 +1,7 @@
 const db = require('../database/database')
 const express = require('express')
 const bp = require('body-parser')
+const nodemailer = require('nodemailer')
 
 const app = express();
 app.use(bp.urlencoded({ extended: false }));
@@ -30,3 +31,37 @@ exports.sign_up = async (req, res) => {
 exports.workshop = async (req, res) => {
     res.render('workshop.ejs', { title: 'Workshop' })
 };
+
+// Nodemailer feedback Section
+exports.feedback = async(req, res) => {
+    const { name, email, message } = req.body;
+  
+    // Create a Nodemailer transporter using SMTP
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'collegematterzz@gmail.com',
+        pass: 'qrpu cxhe ulpn pnjh',
+      },
+    });
+  
+    // Email content
+    const mailOptions = {
+      from: email,
+      to: 'collegematterzz@gmail.com', // Change this to your email address
+      subject: 'Feedback',
+      text: `Name: ${name}\nFrom: ${email}\nMessage: ${message}`,
+    };
+  
+    // Send email
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error('Error:', error.message);
+        res.status(500).send('Internal Server Error');
+      } else {
+        console.log('Email sent:', info.response);
+        res.status(200).send('Email sent successfully');
+      }
+    });
+  };
+  

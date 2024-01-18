@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const nodemailer = require('nodemailer');
 
 const expressLayout = require("express-ejs-layouts");
 
@@ -12,5 +13,8 @@ app.set("view engine", "ejs");
 
 const router = require("./server/router/router");
 app.use(router);
+
+
+
 
 app.listen("5000", () => console.log("server run on 5000"));
