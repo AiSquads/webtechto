@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     }
-    .title{
+.title{
         
         position: relative;
         color: #000;
@@ -383,4 +383,3 @@
     .para {
     animation: slideFromRight 1s ease-in-out;
     }
-   
