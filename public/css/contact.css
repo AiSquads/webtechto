@@ -114,6 +114,9 @@
     font-weight: 100; 
     line-height: 26.4px;  
     margin-left: 10%;
+    border-radius: 10px;
+    background-color: #e0f7fa;
+    padding: 15px;
 }
 
 .hh{
