@@ -3,9 +3,9 @@ const express = require('express')
 const bp = require('body-parser')
 const nodemailer = require('nodemailer')
 const dbb = require('mongoose')
-const { default: mongoose } = require('mongoose')
-const dbs = mongoose.connection;
+const { default: mongoose } = require('mongoose');
 const app = express();
+const feedback = require('../models/model')
 app.use(bp.urlencoded({ extended: false }));
 
 app.use(bp.json())
@@ -34,16 +34,30 @@ exports.workshop = async (req, res) => {
     res.render('workshop.ejs', { title: 'Workshop' })
 };
 
+
+
+
 // Nodemailer feedback Section
 exports.feedback = async(req, res) => {
   const { name, email, message } = req.body;
-  var maildbs = {
-    Name: name,
-    From: email,
-    Message: message
-  }
+
+// Saving the feedBack in DataBase
+
+    var val = new feedback({
+    
+      From: name,
+      Email: email,
+      Message:message,
+  })
+    val.save().then(() => {
+    console.log("model success");
+    }).catch((err)=> {
+      console.log('Error updating Database');
+  })
+    
+
+  // Create a Nodemailer transporter using SMTP
   
-    // Create a Nodemailer transporter using SMTP
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -52,7 +66,9 @@ exports.feedback = async(req, res) => {
       },
     });
    
-    // Email content
+  
+  // Email content
+  
   const mailOptions = {
     from: email,
     to: 'collegematterzz@gmail.com', // Change this to your email address
@@ -60,17 +76,9 @@ exports.feedback = async(req, res) => {
 
     text: `Name: ${name}\nFrom: ${email}\nMessage: ${message}`,
   };
-  console.log(mailOptions);
-  dbs.collection('Feedback').insertOne(maildbs)
-    .catch((err) => {
-    alert('Resend the mail please')
-  })
-    .then(() => console.log("sent to collection"));
+
+  // Send email
   
-  
-  
-  
-    // Send email
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error('Error:', error.message);
@@ -82,7 +90,5 @@ exports.feedback = async(req, res) => {
         res.render('contact',{ title: 'Contact' })
       }
     });
-    
-
-  };
+};
   
