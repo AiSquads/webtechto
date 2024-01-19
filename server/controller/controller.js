@@ -33,6 +33,9 @@ exports.sign_up = async (req, res) => {
 exports.workshop = async (req, res) => {
     res.render('workshop.ejs', { title: 'Workshop' })
 };
+exports.placement = async (req, res) => {
+  res.render('placement.ejs', { title: 'placement' })
+};
 
 // Nodemailer feedback Section
 exports.feedback = async(req, res) => {
