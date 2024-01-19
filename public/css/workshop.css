@@ -48,15 +48,15 @@
         cursor: default;
     }
 
-    .navbar a {
+    .navbarwrkshp a {
         font-size: 1.7rem;
         color: white;
         margin-left: 4rem;
         transition: 0.3s;
     }
 
-    .navbar a:hover,
-    .navbar a.active {
+    .navbarwrkshp a:hover,
+    .navbarwrkshp a.active {
         color: var(--main-color);
     }
 
