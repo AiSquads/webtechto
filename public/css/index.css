@@ -10,34 +10,20 @@
   
 color: transparent;
 -webkit-text-stroke: 1px #000000;
-text-shadow:  10px 5px 5px;
-background: url(/img/text1.png);
--webkit-background-clip: text;
-background-position: 0 0;
-animation: back 20s linear infinite;
+text-shadow:  3px 23px 23px;
+/* background: url(/img/text1.png);
+-webkit-background-clip: text; */
+background-image: url(/img/text1.png);
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 50s ease-in-out infinite;
+/* background-position: 0 0;
+animation: back 20s linear infinite; */
 
 
    }
+   
 
-
-
-@keyframes back{
-    100%{
-        background-position: 2000px 0;
-    }
-}
-
-@keyframes animate{
-    0%,10%,100%
-    {
-        width: -10%;
-    }
-    50%
-    {
-        width: 40%;
-    }
-}
- 
 
     .title1 {
     display: block;
@@ -48,7 +34,7 @@ animation: back 20s linear infinite;
 
     .i {
     margin-left: 750px;
-    margin-top: -420px;
+    margin-top: -460px;
     }
 
     .welcome {
@@ -385,6 +371,24 @@ animation: back 20s linear infinite;
     .para {
     animation: slideFromRight 1s ease-in-out;
     }
-
-
+ 
     
+.line{
+    margin-top: -10px;
+}
+
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      15%,25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+ 
