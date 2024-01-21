@@ -9,14 +9,15 @@
    .title{
   
 color: transparent;
--webkit-text-stroke: 1px #000000;
-text-shadow:  3px 23px 23px;
+
+
 /* background: url(/img/text1.png);
 -webkit-background-clip: text; */
 background-image: url(/img/text1.png);
     background-repeat: repeat;
     -webkit-background-clip:text;
-    animation: animate 50s ease-in-out infinite;
+    animation: animate 40s ease-in-out infinite;
+    animation-delay: 0ms;
 /* background-position: 0 0;
 animation: back 20s linear infinite; */
 
@@ -71,6 +72,7 @@ animation: back 20s linear infinite; */
     }
 
     #idea {
+        margin-top: 50px;
     margin-left: 150px;
     width: 390px;
     height: 500px;
@@ -141,32 +143,36 @@ animation: back 20s linear infinite; */
     }
 
     #img2 {
-    margin-left: 350px;
+        margin-top: 18px;
+    margin-left: 170px;
     width: 600px;
-    height: 500px;
+    height: 480px;
     }
 
     .title3 {
     margin-top: 150px;
     display: flex;
     border: solid;
-    border-color: #00b2ca;
-    background-color: #00b2ca;
+    border-color: #0CC0DF;
+    background-color: #0CC0DF;
     height: 500px;
     }
 
     .title3 h1 {
     padding: 40px;
+    margin-left: 30px;
     }
 
     .pp p {
+        margin-left: 30px;
     margin-top: 0px;
+    width: 500px;
     }
 
     .interactive {
     display: block;
     padding: 40px;
-    margin-left: 70px;
+    margin-left: 60px;
     }
 
     .in {
@@ -250,8 +256,12 @@ animation: back 20s linear infinite; */
     .title7 {
     display: flex;
     border: solid;
-    border-color: #e7a9b1;
-    background-color: #e7a9b1;
+    border-color: transparent;
+    /* background:linear-gradient(#E6D7FF,#F8DCE0,#F8DBE0,#CFFBF6); */
+    background: url(/img/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
     }
 
@@ -273,10 +283,11 @@ animation: back 20s linear infinite; */
     }
 
     .title8 {
+        margin-top: 30px;
     display: flex;
     border: solid;
-    background-color: #ffd45e;
-    border-color: #ffd45e;
+    background:url(../img/back1.png);
+    border-color:transparent;
     height: 500px;
     }
 
@@ -295,13 +306,16 @@ animation: back 20s linear infinite; */
     }
 
     #img4 {
-    width: 600px;
-    height: 300px;
-    margin-left: 400px;
-    margin-top: 100px;
+    width: 700px;
+    height: 400px;
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 20px;
     }
 
     #img5 {
+        border-radius: 30px;
+        margin-left: 30px;
     width: 600px;
     height: 350px;
     margin-top: 80px;
